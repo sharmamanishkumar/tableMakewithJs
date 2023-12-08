@@ -119,6 +119,8 @@ const userTable = document.querySelector(".userTable");
 const bodyTable = document.querySelector("#bodytable");
 function showRow(id) {
   console.log(id);
+  const findUser = myUser.find(user=>user.id);
+  console.log(findUser);
 }
 for (const user of myUser) {
   const userList = document.createElement("tr");
